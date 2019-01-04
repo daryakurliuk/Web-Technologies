@@ -1,0 +1,49 @@
+* {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    height: 15%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(162, 235, 238);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+li{
+    height: auto;
+    width: auto;
+}
+#content {
+    height: 70%;
+    margin: 1% 5% 1% 5%;
+    background-color: rgb(230, 236, 136);
+    top: 17%;
+    bottom: 17%;
+    overflow: auto;
+}
+
+footer {
+    height: 15%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(162, 235, 238);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.container {
+    width: 10%;
+    height: 600px;
+    /* Center the DIV horizontally */
+    background-color: rgba(201, 247, 248,0.1);
+    position: fixed;
+    overflow: auto;
+}
+.container a {
+    display: block;
+    height: 4%;
+}

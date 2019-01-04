@@ -1,0 +1,49 @@
+body
+{
+    background-color: rgb(20, 20, 20);
+    color: rgb(234, 242, 250);
+    font-family: 'Roboto Thin' ,sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    Overflow-y: hidden;
+
+}
+
+#wrapper
+{
+    margin: 0%;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+table
+{
+    width: 100%;
+    margin-left: 0%;
+    border-spacing: 1vw;
+    margin: -0.6vh 0 0vh 0;
+}
+
+
+#head tr
+{
+    background-color: rgb(233, 19, 3);
+    height: 10vh;
+}
+#top tr
+{
+    background-color: rgb(233, 236, 9);
+    height: 30vh;
+}
+
+#center tr
+{
+    background-color: rgb(11, 215, 241);
+    height: 26vh;
+}
+#bottom tr
+{
+    background-color: rgb(184, 181, 181);
+    height: 18vh;
+}
