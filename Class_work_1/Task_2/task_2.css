@@ -29,12 +29,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(94, 94, 94);
+    background: rgb(131, 129, 129);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(94, 94, 94);
+    background:rgb(131, 129, 129);
 }
 
 .list-item {
