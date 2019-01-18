@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HomeWork 6 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="task6.css" />
+
+</head>
+
+<body>
+     <div class="form">  
+        <label for="inpUserID">User ID: </label>
+        <input name="userID" id="inpUserID" type="text" placeholder="UserId">
+        <label for="inpID">ID: </label>
+        <input name="id" id="inpID" type="text"  placeholder="Id">
+        <label for="inpTitle">Title:</label>
+        <input name="title" id="inpTitle" type="text" placeholder="Title">
+        <label for="inpBody">Body: </label>
+        <input name="body" id="inpBody" type="text" placeholder="Body">
+        <br>
+        <button id="add" type="submit" onclick="CreateData()">Create Data</button>
+    </div> 
+    <div class="form">
+        <label for="inpUpdUserID">userId: </label>
+        <input name="userId" type="text" id="inpUpdUserID" placeholder="UserId">
+        <label for="inpUpdID">ID:</label>
+        <input name="id" id="inpUpdID" type="text" placeholder="Id">
+        <label for="inpUpdTitle">Title:</label>
+        <input name="title" id="inpUpdTitle" type="text" placeholder="Title">
+        <label for="inpUpdBody">Body:</label>
+        <input name="body" id="inpUpdBody" type="text" placeholder="Body">
+        <br>
+        <button id="update" type="submit" onclick="UpdateData()">Update Data</button>
+    </div>
+
+    <div class="form">
+        <label for="inpDel">ID:</label>
+        <input id="inpDel" type="text" placeholder="Id">
+        <br>
+        <button id="delete" type="submit" onclick="DeleteData()">Delete Data</button>
+    </div>
+
+    <input id="getR" type="button" value="Get Request" onclick="window.location.href='task6_1.html'">
+    <div id="info"></div>
+    <script src="task6.js"></script>
+</body>
+
+</html>
