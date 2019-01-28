@@ -1,22 +1,24 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller",
-    "sap/ui/model/json/JSONModel",
-	"sap/ui/core/mvc/XMLView"
-], function (Controller) {
-    "use strict";
+	"sap/ui/core/mvc/Controller",
+	"sap/ui/core/UIComponent"
+], function (Controller, UIComponent) {
+	"use strict";
 
-
-    return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
-        onInit: function () {
-            var url = "https://services.odata.org/TripPinRESTierService/(S(3aostjazvukcnjbuztmsdqt0))/People";
-            var oModel = new sap.ui.model.json.JSONModel(url);
-            sap.ui.getCore().setModel(oModel, "People");
-        },
-        listFactory: function (sId) {
+	return Controller.extend("sap.ui.demo.db.controller.App", {
+		onInit: function(){
+		},
+		getRouter : function () {
+			return UIComponent.getRouterFor(this);
+		},
+		productListFactory : function(sId, oContext) {
 			var oUIControl;
-			oUIControl = this.byId("item").clone(sId);
-			console.log(sId);
+			oUIControl = this.byId("productExtended").clone(sId);
 			return oUIControl;
+		},		
+		onItemSelected: function(oEvent) {
+			var oSelectedItem = oEvent.getSource();
+			var context = encodeURIComponent(oSelectedItem.getBindingContext('people').getPath());
+			this.getRouter().navTo("detail",  {invoicePath: context});
 		}
     });
 });
